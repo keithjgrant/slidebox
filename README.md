@@ -15,6 +15,10 @@ the faster the content scrolls.  And the regular old scrollbar is
 still there for use. On a touch device, the content scrolls at a
 constant speed while one of the control buttons is pressed.
 
+Live demo
+---------
+http://codepen.io/keithjgrant/pen/vqnaA
+
 Markup example
 --------------
 
