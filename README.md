@@ -26,13 +26,14 @@ Markup example
     Your content here!
 </slidebox>```
 
-The "speed" attribute is optional. Default value is 25.
+All attributes are optional.
 
-The "content-width" attribute may be specified in any px, em, or any
-other standard CSS unit.  Alternately, you may specify the width of the
-inner content in your stylesheet by applying a width rule to the
-either the "slidebox-content" class or another class specified with the
-"content-class" attribute.
+**speed** -- Default value is 25.
 
-Space-seperated class names specified via the "content-class" attribute
-will also be given to the inner content.
+**content-width** -- Width of the *inner* content.  May be specified in 
+px, em, or any other standard CSS unit Alternately, you may specify the
+width in your stylesheet by selecting either the "slidebox-content" class
+or another class specified with the "content-class" attribute.
+
+**content-class** -- Space-seperated class names to be applied to the
+*inner* content div.
