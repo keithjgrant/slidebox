@@ -1,7 +1,11 @@
 /**
 * Slidebox Directive
+*
 * version 0.9
 * http://github.com/keithjgrant/slidebox
+*
+* by Keith J Grant
+* http://elucidblue.com
 */
 angular.module('Slidebox', [])
 
