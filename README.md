@@ -18,12 +18,17 @@ constant speed while one of the control buttons is pressed.
 Markup example
 --------------
 
-```<slidebox speed="25" content-width="1000px">
+```<slidebox speed="25" content-width="1000px" content-class="my-sb-content">
     Your content here!
 </slidebox>```
 
-The "speed" attribute is optional. Default value is 25.  The
-"content-width" attribute may be specified in any px, em, or any
-other standard CSS unit.  You may also specify the content-width
-in your stylesheet by applying a width rule to the element with
-the class "slidebox-content".
+The "speed" attribute is optional. Default value is 25.
+
+The "content-width" attribute may be specified in any px, em, or any
+other standard CSS unit.  Alternately, you may specify the width of the
+inner content in your stylesheet by applying a width rule to the
+either the "slidebox-content" class or another class specified with the
+"content-class" attribute.
+
+Space-seperated class names specified via the "content-class" attribute
+will also be given to the inner content.

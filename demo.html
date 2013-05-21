@@ -3,7 +3,10 @@
   <link rel="stylesheet" type="text/css" href="css/slidebox.css">
   <style type="text/css">
     /* custom page styles */
-    .my-slidebox .slidebox-content {
+    .my-slidebox {
+      background-color: #ccf;
+    }
+    .my-slidebox-content {
       -webkit-column-count: 5;  -webkit-column-gap: 15px;
          -moz-column-count: 5;     -moz-column-gap: 15px;
               column-count: 5;          column-gap: 15px;
@@ -14,7 +17,7 @@
   <script src="slidebox.js"></script>
 </head>
 <body ng-app="Slidebox">
-  <slidebox content-width="5000px" class="my-slidebox">
+  <slidebox content-width="5000px" class="my-slidebox" content-class="my-slidebox-content">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elit leo, rutrum non vulputate quis, venenatis ullamcorper magna. Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dignissim eros in elit semper adipiscing. Quisque cursus, nisi ac ornare imperdiet, lacus purus cursus metus, eu feugiat metus felis et dui. Aenean libero arcu, scelerisque sed sollicitudin ac, tempor eu ante. Nullam sodales nibh et orci aliquam sed cursus diam fermentum. Pellentesque faucibus hendrerit hendrerit. Sed feugiat, mauris et commodo tincidunt, orci orci rhoncus neque, eu pretium ligula augue sit amet lectus. Sed dignissim vehicula consectetur. In ac eros massa, id viverra felis. In ut nisi metus, at commodo enim. Vestibulum pellentesque pretium laoreet. Praesent a metus lectus, sit amet rutrum velit. Suspendisse potenti. Nam sodales scelerisque tellus, non auctor nunc consequat sit amet.
 
     Curabitur ac porttitor lectus. Donec magna tellus, condimentum vitae vulputate scelerisque, viverra eget quam. Praesent at tempor tortor. Pellentesque a lectus nec elit vulputate tempus. Etiam ut vulputate odio. Phasellus lectus magna, sollicitudin ut rhoncus sit amet, consectetur in nibh. In hac habitasse platea dictumst. Aenean massa augue, rhoncus vel bibendum et, venenatis a sapien. Fusce metus elit, posuere eu rhoncus vitae, consectetur eget augue.

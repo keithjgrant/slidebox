@@ -40,6 +40,9 @@ function SlideboxCtrl ($scope, $element, $attrs) {
             if (attrs.contentWidth) {
                 content.children[0].style.width = attrs.contentWidth;
             }
+            if (attrs.contentClass) {
+                content.children[0].className += ' ' + attrs.contentClass;
+            }
 
             function startScroll (isLeft) {
                 // set default velocity for touchdevices
