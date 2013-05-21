@@ -1,0 +1,51 @@
+/**
+ * Slidebox default styles
+ * 
+ * http://github.com/keithjgrant/slidebox -- I think. Repository pending
+ *   if I still like the name by the time I'm done:)
+ * Version 0.9
+ */
+
+.slidebox-container {
+    position: relative;
+}
+
+.slidebox {
+    height: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    padding: 10px;
+}
+
+.slidebox-content {
+}
+
+.slidebox-controls {
+    border: #fff 1px solid;
+    border-radius: 3px;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    bottom: 15px; /* don't cover scrollbar */
+    width: 10%;
+}
+
+.slidebox-left {
+    background: rgba(128, 128, 128, 0.5) url(../images/left-arrow.png) center center no-repeat;
+    left: 0;
+    cursor: w-resize;
+}
+
+.slidebox-right {
+    background: rgba(128, 128, 128, 0.5) url(../images/right-arrow.png) center center no-repeat;
+    right: 0;
+    cursor: e-resize;
+}
+
+.box {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: #eef;
+}
