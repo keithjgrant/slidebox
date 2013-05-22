@@ -13,7 +13,7 @@
     height: 100%;
     overflow-x: auto;
     overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch; /* iOS swipe-scroll support */
     padding: 10px;
 }
 

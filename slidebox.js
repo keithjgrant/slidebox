@@ -9,10 +9,6 @@
 */
 angular.module('Slidebox', [])
 
-.controller('SlideboxCtrl', ['$scope', '$element', '$attrs',
-function SlideboxCtrl ($scope, $element, $attrs) {
-}])
-
 .directive('slidebox', function slideboxDirective () {
     return {
         template: '<div class="slidebox-container">' +
@@ -26,7 +22,6 @@ function SlideboxCtrl ($scope, $element, $attrs) {
         transclude: true,
         restrict: 'AE',
         scope: false,
-        controller: 'SlideboxCtrl',
         link: function (scope, element, attrs) {
             var content = element.children()[0],
                 leftEl = element.children()[1],
@@ -38,7 +33,13 @@ function SlideboxCtrl ($scope, $element, $attrs) {
                 didScroll = true; // trigger an initial check on load
 
             if (attrs.contentWidth) {
-                content.children[0].style.width = attrs.contentWidth;
+                scope.$watch(attrs.contentWidth, function (value) {
+                    if (value == Number(value)) {
+                        value += 'px';
+                    }
+                    content.children[0].style.width = value;
+                    didScroll = true;
+                });
             }
             if (attrs.contentClass) {
                 content.children[0].className += ' ' + attrs.contentClass;
