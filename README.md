@@ -19,6 +19,14 @@ Live demo
 ---------
 http://codepen.io/keithjgrant/pen/vqnaA
 
+To Use
+------
+All you need is js/slidebox.js, css/slidebox.css, and the images.  Add those
+to your project and include the 'Slidebox' module. Everything else in this
+repository has to do with the demo and unit tests.
+
+To view the demo, clone the repository into a local directory and open demo.html.
+
 Markup example
 --------------
 
