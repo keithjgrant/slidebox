@@ -84,18 +84,23 @@ angular.module('Slidebox', [])
             };
 
             function updateVelocity (controlEl, xPos, isLeft) {
-                var scale = getVelocityScalar(controlEl, xPos);
-                if (isLeft) {
-                    scale -= 1;
-                }
+                var scale = getVelocityScalar(controlEl, xPos),
+                    round,
+                    opacityScalar;
 
                 if (isLeft) {
+                    // scale is % from the left side; convert to negative %
+                    // from the right:
+                    scale -= 1;
+
                     controlEl.style.opacity = defaultOpacity + scale * -1;
+                    round = Math.floor;
                 } else {
                     controlEl.style.opacity = defaultOpacity + scale;
+                    round = Math.ceil;
                 }
 
-                velocity = scale * maxVelocity;
+                velocity = round(scale * maxVelocity);
             }
 
             /**
